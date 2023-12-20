@@ -21,7 +21,7 @@ const games = [
   { name: "Ice Dice", url: "https://sites.google.com/site/coolmathgames247/home" },
   { name: "Really Cool Game", url: "https://artsology.com/bezier-art-game.php" },
   { name: "Drive Mad", url: "https://drive-mad--deeznutz59.repl.co" }
-  { name: "Movies", url: "https://movie.gamehaven.tech" }
+  { name: "Movies", url: "https://movie.gamehaven.tech" },
   // Add more games as needed
 ];
 
