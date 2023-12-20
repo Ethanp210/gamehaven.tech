@@ -20,7 +20,7 @@ const games = [
   { name: "bitlife", url: "https://canvas2.gamehaven.tech/misc/bitlife/" },
   { name: "Ice Dice", url: "https://sites.google.com/site/coolmathgames247/home" },
   { name: "Really Cool Game", url: "https://artsology.com/bezier-art-game.php" },
-  { name: "Drive Mad", url: "https://drive-mad--deeznutz59.repl.co" }
+  { name: "Drive Mad", url: "https://drive-mad--deeznutz59.repl.co" },
   { name: "Movies", url: "https://movie.gamehaven.tech" },
   // Add more games as needed
 ];
