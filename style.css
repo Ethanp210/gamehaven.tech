@@ -1,22 +1,278 @@
-  body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
+/* Previous styles remain unchanged */
 
-  h1 {
-    color: #333;
-  }
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
 
-  #gameList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-  }
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
 
-  .button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 16px; /* Adjust font size for better readability */
-    cursor: pointer;
-  }
+nav {
+  background-color: #444;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1em;
+  font-weight: bold;
+}
+
+section {
+  padding: 2em;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+/* New styles for added sections */
+
+section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1em;
+}
+
+#rules,
+#gallery {
+  text-align: center;
+}
+
+#staff {
+  background-color: #ddd;
+  padding: 2em;
+  text-align: center;
+}
+
+#faq {
+  padding: 2em;
+}
+
+#cta {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2em;
+}
+
+#cta button {
+  background-color: #ff9900;
+  color: #333;
+  padding: 1em 2em;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#cta button:hover {
+  background-color: #ffcc66;
+}
+
+#news {
+  padding: 2em;
+}
+
+#contact {
+  background-color: #ddd;
+  padding: 2em;
+  text-align: center;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+#contact form label {
+  margin-bottom: 0.5em;
+}
+
+#contact form input,
+#contact form textarea {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+#contact form button {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contact form button:hover {
+  background-color: #555;
+}
+
+/* Previous styles remain unchanged */
+
+/* New styles for FAQ dropdown */
+.faq-item {
+  margin-bottom: 1em;
+}
+
+.faq-content {
+  display: none;
+  padding: 1em;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.faq-item input {
+  display: none;
+}
+
+.faq-item label {
+  display: block;
+  padding: 1em;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.faq-item input:checked + label {
+  background-color: #555;
+}
+
+.faq-item input:checked + label + .faq-content {
+  display: block;
+}
+
+/* Previous styles remain unchanged */
+
+/* New styles for contact form */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+#contact form label {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+#contact form input,
+#contact form textarea {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#contact form button {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contact form button:hover {
+  background-color: #555;
+}
+
+/* Contact Form Styles */
+h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+p {
+  margin-bottom: 1em;
+  color: #555;
+}
+
+/* Add your existing styles and any additional styles for the FAQ section */
+
+.faq-list {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-list li {
+  margin-bottom: 20px;
+}
+
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+input[type="checkbox"]:checked + label + .faq-content {
+  max-height: 1000px;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
