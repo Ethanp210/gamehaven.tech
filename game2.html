@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cali Life RP - Games</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
 
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+  background-color: #444;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1em;
+  font-weight: bold;
+}
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+            background-color: #fff;
+            color: #000;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #f0f0f0;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gamehaven</h1>
+        <p>Welcome to the Gamehaven, we have hundreds of unblocked games that are updated frequently.</p>
+    </header>
+
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/games1.html">Games</a>
+    </nav>
+
+    <section id="gameList">
+        <!-- Game buttons will be dynamically generated here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gamehaven. All rights reserved. Not affiliated with any real-life brands.</p>
+    </footer>
+
+    <script>
+        const games = [
+            { name: "Slope", url: "https://sites.google.com/view/slopecom/" },
+            { name: "Getaway Shootout", url: "https://sites.google.com/site/classroom6x/getaway-shootout?authuser=0" },
+            { name: "Ovo", url: "https://sites.google.com/site/classroom6x/ovo" },
+            { name: "Run 3", url: "https://lekug.github.io/tn6pS9dCf37xAhkJv/" },
+            { name: "Swerve", url: "https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/VecAxR3e/index.html" },
+            { name: "bitlife", url: "https://canvas.gamehaven.tech/misc/bitlife/" },
+            { name: "Ice Dice", url: "https://sites.google.com/site/coolmathgames247/home" },
+            { name: "Really Cool Game", url: "https://artsology.com/bezier-art-game.php" },
+            // Add more games as needed
+        ];
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const gameListContainer = document.getElementById("gameList");
+
+            games.forEach((game) => {
+                const button = document.createElement("button");
+                button.textContent = game.name;
+                button.className = "button";
+                button.addEventListener("click", () => {
+                    window.location.href = game.url;
+                });
+                gameListContainer.appendChild(button);
+            });
+        });
+    </script>
+</body>
+</html>
